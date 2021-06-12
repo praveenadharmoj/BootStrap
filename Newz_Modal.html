@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <link rel="stylesheet" href="bootstrap.min.css">
+ <style>
+     body{
+         margin-left: 350px;
+         margin-top: 100px;
+         padding: 2px;
+     } 
+     input{
+         padding: 2px;
+     }
+     form{
+        background-image: url("C:\Users\COMPUTER\Documents\Bootstrap\Newz\Images\bg.jpg");
+     }
+     
+     
+ </style>
+</head>
+<body background="C:\Users\COMPUTER\Documents\Bootstrap\Newz\BootStrap_WS\bgg1.jpg" >
+    <h3>LOGIN FORM</h3>
+ <form novalidate class="needs-validation" >
+ <div class="form-group py-2">
+ <input class="form-control" type="text" placeholder="Enter FirsrName" required>
+ <label>FirstName</label>
+ <!-- <small class="invalid-feedback">Please Enter the valid Username</small> -->
+</div>
+<div class="form-group py-2">
+ <input class="form-control" type="password" placeholder="Enter LastName" required>
+ <label>LastName</label>
+ <!-- <small class="invalid-feedback">Please enter the valid password</small> -->
+</div>
+<div class="form-group">
+ <input class="form-control" type="email" placeholder="Enter EmailId" required>
+ <label>Email-Id</label>
+ <!-- <small class="invalid-feedback">Please enter a email id</small> -->
+</div>
+<div class="form-group">
+    <input class="form-control" type="email" placeholder="Enter Password" required>
+    <label>Password</label>
+    <!-- <small class="invalid-feedback">Please enter a email id</small> -->
+   </div>
+   <div class="form-group">
+    <input class="form-control" type="email" placeholder="Re-enter Password" required>
+    <label>Confirm Password</label>
+    <!-- <small class="invalid-feedback">Please enter a email id</small> -->
+   </div>
+<div class="form-group">
+<input class="form-control" type="date">
+<label>Date of Birth</label>
+</div>
+<!-- <div class="form-group">
+<input class="btn btn-warning" type="submit" value="Login">
+</div> -->
+</form> 
+<div class="container">
+    <a href="News_Newz.html" class="btn btn-danger" type="button">Login</a>
+    </div> 
+<script>
+ var v=document.querySelector('.needs-validation');
+ v.addEventListener('submit',function(e){
+ if(v.checkValidity()===false){
+ e.preventDefault();
+ e.stopPropagation();
+ }
+ v.classList.add('was-validated');
+// console.log(v.checkValidity()==true);
+ })
+</script>
+</body>
+</html
